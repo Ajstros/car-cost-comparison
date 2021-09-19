@@ -110,7 +110,7 @@ def get_electricity_prices(url='https://www.eia.gov/electricity/monthly/epm_tabl
         if len(tds) == 0:
             continue
         else:
-            prices[tds[0].text] = float(tds[1].text)
+            prices[tds[0].text] = float(tds[1].text) / 100
     return prices
 
 def get_electricity_by_state(state):

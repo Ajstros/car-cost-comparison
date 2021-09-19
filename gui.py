@@ -97,7 +97,7 @@ def graph():
 
     colors = ['b', 'r', 'g', 'c', 'm', 'y']
     color_index = 0
-    x = [i for i in range(366)]
+    x = [i for i in range(3651)] # 10 years
     for car in cars:
         color = colors[color_index]
         if car.type == Car.ELECTRIC:
