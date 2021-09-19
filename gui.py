@@ -87,7 +87,9 @@ def graph():
     for i in range(len(clicked_make_list)):
         make = clicked_make_list[i].get()
         model = clicked_model_list[i].get()
+        initial_price = int(ent_initial_price_list[i].get())
         car = Car.get_car(make=make, model=model)
+        car.initial_price = initial_price
         if car is None:
             continue
         else:
