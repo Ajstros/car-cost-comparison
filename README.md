@@ -13,6 +13,7 @@ Copy the repository onto your machine from [GitHub](https://github.com/Ajstros/c
 - matplotlib
 - bs4
 - requests
+
 These can be installed from the requirements.txt file in this repository:
 ```sh
 pip install -r requirements.txt
