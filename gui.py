@@ -69,7 +69,7 @@ def create_car_entry():
 def graph():
     frm_graph = tk.Frame(master=window)
     fig = Figure(
-        figsize = (5, 5),
+        figsize = (7, 7),
         dpi = 100
     )
     ax = fig.add_subplot(1, 2, 1)
@@ -79,6 +79,9 @@ def graph():
     ax.spines['top'].set_color('none')
     ax.xaxis.set_ticks_position('bottom')
     ax.yaxis.set_ticks_position('left')
+    ax.set_title('Total Cost over Time')
+    ax.set_xlabel('Time (days)')
+    ax.set_ylabel('Cost ($)')
 
     cars = []
 
@@ -114,11 +117,10 @@ def graph():
     ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
     canvas = FigureCanvasTkAgg(fig, master=frm_graph)
     canvas.draw()
-    canvas.get_tk_widget().grid(row=0, column=0, padx=10, rowspan=10)
+    canvas.get_tk_widget().grid(row=0, column=1, padx=10, rowspan=10)
     frm_toolbar = tk.Frame(master=frm_graph)
     toolbar = NavigationToolbar2Tk(canvas, frm_toolbar)
     toolbar.update()
-    canvas.get_tk_widget().grid(row=0, column=1, padx=10)
     frm_toolbar.grid(row=11, column=1, padx=10)
     frm_graph.grid(row=0, column=1, padx=10, sticky='ew', rowspan=20)
     
