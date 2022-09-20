@@ -21,3 +21,6 @@ pip install -r requirements.txt
 
 # Usage
 After copying the repository, run gui.py to run the program. Choose your state by clicking on the button defaulting to "Alabama."  Enter the estimated number of miles driven per day rounded to the nearest integer in the box labeled "Miles per Day (int)." Click "Add Car" to add a car to your comparison. Click on the first and second buttons of the newly added row to choose the make and model of the car. Enter the price of the car in the box labeled "Initial Price" to include purchasing costs in your comparison. Add more cars with the "Add Car" button, filling out the added rows. When ready, click "Graph" to produce a graph of cost (USD) vs. time (days) comparing the selected cars.
+
+# Example
+![Screenshot of example usage comparing a Ford Crown Victoria starting at $4000 against a Tesla Model 3 Long Range starting at $60000 in Michigan](https://github.com/Ajstros/car-cost-comparison/blob/main/example_screenshot.png)
